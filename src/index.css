@@ -1,0 +1,93 @@
+/*
+  Import Tailwind's v4 preflight (base styles) and utilities.
+*/
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/*
+  Definition of the design system using standard CSS custom properties.
+  These are defined directly in the stylesheet without @layer wrappers.
+  Your tailwind.config.js file will read these variables directly.
+*/
+:root {
+  /* Agricultural Light Green Theme */
+  --background: 120 20% 98%;
+  --foreground: 120 50% 15%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 120 50% 15%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 120 50% 15%;
+
+  /* Primary - Deep Agricultural Green */
+  --primary: 120 60% 25%;
+  --primary-foreground: 120 20% 98%;
+  --primary-light: 120 40% 35%;
+  --primary-glow: 120 50% 45%;
+
+  /* Secondary - Light Green */
+  --secondary: 120 30% 92%;
+  --secondary-foreground: 120 60% 25%;
+
+  /* Muted - Very Light Green */
+  --muted: 120 20% 95%;
+  --muted-foreground: 120 30% 40%;
+
+  /* Accent - Medium Green */
+  --accent: 120 35% 85%;
+  --accent-foreground: 120 60% 25%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 120 25% 88%;
+  --input: 120 25% 88%;
+  --ring: 120 60% 25%;
+
+  --radius: 0.75rem;
+
+  /* Gradient Variables */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+  --gradient-light: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+  --gradient-hero: linear-gradient(135deg, hsl(120 20% 98%), hsl(120 30% 96%));
+
+  /* Shadow Variables */
+  --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+  --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.2);
+  --shadow-card: 0 8px 30px -8px hsl(var(--primary) / 0.15);
+
+  /* Animation Variables */
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+}
